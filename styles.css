@@ -1,0 +1,38 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fade-in {
+	/* animation-name: FadeIn; */
+	/* animation-duration: 3s; */
+	transition-timing-function: linear;
+	opacity: 1;
+}
+
+#typing-input {
+  outline: none;
+	border: none;
+	font-size: 15vh;
+	caret-color: red;
+}
+
+.container, #typing-input-container {
+  width: 15vw; 
+	margin-top: 15vh;
+}
+
+#current-word {
+  width: 15vw; 
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
